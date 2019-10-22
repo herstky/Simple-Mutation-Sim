@@ -1,6 +1,6 @@
 #pragma once
 #include <qgraphicsitem.h>
-#include "replicator.h"
+#include "simulation.h"
 
 class Board :
 	public QGraphicsItem

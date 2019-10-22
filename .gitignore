@@ -4,4 +4,5 @@
 *.vcxproj.filters
 *.vcxproj.user
 /GeneratedFiles
+*.sln
 

@@ -4,12 +4,12 @@
 #include "ui_replicator.h"
 #include <QTimer>
 
-class Replicator : public QMainWindow
+class Simulation : public QMainWindow
 {
 	Q_OBJECT
 		
 public:
-	Replicator(QWidget* parent = Q_NULLPTR);
+	Simulation(QWidget* parent = Q_NULLPTR);
 	QGraphicsScene scene;
 
 	const int width;

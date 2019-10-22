@@ -1,9 +1,9 @@
-#include "replicator.h"
+#include "simulation.h"
 
 #include "board.h"
 #include "creature.h"
 
-Replicator::Replicator(QWidget* parent)
+Simulation::Simulation(QWidget* parent)
 	: QMainWindow(parent), 
 	  width(800), height(600), 
 	  animatedTimeStep(1000 / 33), 
@@ -30,7 +30,7 @@ Replicator::Replicator(QWidget* parent)
 	connect(ui.animate, SIGNAL(clicked(bool)), this, SLOT(toggleAnimation()));
 }
 
-void Replicator::initialize()
+void Simulation::initialize()
 {
 	scene.clear();
 	Board* board = new Board(width, height);
@@ -44,7 +44,7 @@ void Replicator::initialize()
 	}
 }
 
-void Replicator::update()
+void Simulation::update()
 {
 	if (timer.isActive())
 	{
@@ -58,7 +58,7 @@ void Replicator::update()
 	}
 }
 
-void Replicator::next()
+void Simulation::next()
 {
 	if (timer.isActive())
 	{
@@ -67,12 +67,12 @@ void Replicator::next()
 	scene.advance();
 }
 
-void Replicator::restart()
+void Simulation::restart()
 {
 	initialize();
 }
 
-void Replicator::toggleAnimation()
+void Simulation::toggleAnimation()
 {
 	if (ui.animate->checkState())
 	{

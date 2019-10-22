@@ -3,7 +3,7 @@
 #include "math.h"
 
 #include "board.h"
-#include "replicator.h"
+#include "simulation.h"
 #include "ui_replicator.h"
 
 class Creature :

@@ -1,11 +1,11 @@
-#include "replicator.h"
+#include "simulation.h"
 #include <QtWidgets/QApplication>
 
 int main(int argc, char *argv[])
 {
 	QApplication a(argc, argv);
-	Replicator w;
-	w.setWindowState(Qt::WindowMaximized);
-	w.show();
+	Simulation sim;
+	sim.setWindowState(Qt::WindowMaximized);
+	sim.show();
 	return a.exec();
 }
