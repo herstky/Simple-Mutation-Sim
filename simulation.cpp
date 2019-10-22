@@ -36,7 +36,7 @@ void Simulation::initialize()
 	Board* board = new Board(width, height);
 	board->setPos(0, 0);
 	scene.addItem(board);
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < 200; i++)
 	{
 		Creature* creature = new Creature(board, &ui);
 		creature->setCacheMode(QGraphicsItem::ItemCoordinateCache);
